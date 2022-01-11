@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>WatchMan</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="some description">
+		<meta name="keywords" content="keyword 1, keyword 2, keyword 3, keyword 4, ...">
+		<meta name="author" content="Tibor Tot">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+		<style>
+			html body { margin: 0;
+						font-family: 'Manrope', sans-serif; 
+						font-size: 16px; }
+			.hero { background-image: url("img/5711-014.jpg");
+							background-position: center;
+							background-repeat: no-repeat;
+							background-size: cover;
+							height: 500px;
+							position: relative; }
+			main div { margin: 15px; }
+			h1 { margin: 0;
+					padding: 15px 0 0 15px; }
+			ul { background-color: #335137;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden; }
+			li a { float: left;
+				padding: 14px 25px;
+				text-align: center;
+				color: white; 
+				text-decoration: none;
+				display: block;}
+			li a:hover { background-color: #2A392C; }
+			label { display: block; 
+					font-family: 'Manrope', sans-serif;
+					font-size: 18px;
+					padding: 10px 0; }
+			input { font-family: 'Manrope', sans-serif;
+					font-size: 15px;
+					padding: 10px;
+					outline: none;
+					border: 1px solid black;
+					border-radius: 5px;}
+			input[type=submit] { display: block;
+								width: 20%;
+								margin: 10px 0 0 0;
+								background-color: #335137;
+								color: white; 
+								border-color: #335137; }
+			input[type=submit]:hover { cursor: pointer;
+										background-color: #2A392C; }
+			select { font-family: 'Manrope', sans-serif;
+					font-size: 15px;
+					padding: 10px;
+					width: 35.5%;
+					border: 1px solid black;
+					border-radius: 5px; }
+			textarea { font-family: 'Manrope', sans-serif;
+						font-size: 15px;
+						width: 33.7%;
+						padding: 10px;
+						border: 1px solid black; 
+						border-radius: 5px; }
+			footer { background-color: #335137;
+					text-align: center;
+					padding: 0.1em;
+					height: 40px; }
+			@media screen and (max-width: 900px) {
+					li a { padding: 10px; }
+					input { width: 90%; }
+					textarea { width: 50%; }
+					input[type=submit] { width: 25%; }
+					}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="hero" style="height: 200px;"></div>
+			<nav>
+				<ul>
+					<li><a href="watch_project.html">Home</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h1>Contact Form</h1>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.271034120229!2d15.982235145339256!3d45.80583007082195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d657cf780f0f%3A0x99541e05dc162d7d!2sPalmoti%C4%87eva%20ul.%2082%2C%2010000%2C%20Zagreb!5e0!3m2!1shr!2shr!4v1641561349397!5m2!1shr!2shr" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<form action="upload.php" id="contact_form" name="contact_form" method="POST">
+					<label for="fname">First Name *</label>
+					<input type="text" id="fname" name="firstname" size="50%" placeholder="Your name.." required>
+					<label for="lname">Last Name *</label>
+					<input type="text" id="lname" name="lastname" size="50%" placeholder="Your last name.." required>
+					<label for="lname">Your E-mail *</label>
+					<input type="email" id="email" name="email" size="50%" placeholder="Your e-mail.." required>
+					<label for="country">Country</label>
+					<select id="country" name="country">
+						<option value="">Please select</option>
+						<option value="BH">Bosnia and Herzegovina</option>
+						<option value="BE">Belgium</option>
+						<option value="HR" selected>Croatia</option>
+						<option value="DN">Denmark</option>
+						<option value="FR">France</option>
+						<option value="DE">Germany</option>
+					</select>
+					<label for="subject">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</main>
+		<footer>
+			<div>
+				<p style="color: white; margin: 0.5em;">Copyright &copy; 2022 Tibor Tot. <a href="https://github.com/ttot9" target="_blank"><img src="img/github.png" title="GitHub" alt="GitHub" style="width: 20px;"></a></p>
+			</div>
+		</footer>
+	</body>
+</html>
